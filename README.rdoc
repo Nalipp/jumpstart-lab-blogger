@@ -1,2 +1,21 @@
 Open source software from Jumpstart labs.
 http://tutorials.jumpstartlab.com/
+
+
+bin/rails generate model Article
+bin/rails generate controller articles
+
+bin/rails generate model Comment author_name:string body:text article:references
+bin/rails generate controller comments
+
+bin/rails generate model Tag name:string
+bin/rails generate model Tagging tag:references article:references
+bin/rails generate controller tags
+
+bin/rails generate migration add_paperclip_fields_to_article
+
+bin/rails generate sorcery:install --model=Author
+
+bin/rails generate scaffold_controller Author username:string email:string password:password password_confirmation:password
+
+bin/rails generate controller AuthorSessions
