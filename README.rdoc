@@ -12,10 +12,10 @@ $bin/rails generate model Tag name:string
 $bin/rails generate model Tagging tag:references article:references
 $bin/rails generate controller tags
 
+gem 'paperclip'
 $bin/rails generate migration add_paperclip_fields_to_article
 
+gem 'sorcery'
 $bin/rails generate sorcery:install --model=Author
-
 $bin/rails generate scaffold_controller Author username:string email:string password:password password_confirmation:password
-
 $bin/rails generate controller AuthorSessions
