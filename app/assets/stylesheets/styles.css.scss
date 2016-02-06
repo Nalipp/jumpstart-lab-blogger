@@ -22,12 +22,22 @@ a {
 }
 
 #container {
-  width: 75%;
-  margin: 0 auto;
+  width: 60%;
+  margin: 20px;
   background: #fff;
   padding: 20px 40px;
   border: solid 1px black;
   margin-top: 20px;
+}
+
+#side_bar {
+  width: 10%;
+  margin: 20px;
+  background: #fff;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+  float: right;
 }
 
 #content {

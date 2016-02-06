@@ -1,0 +1,36 @@
+<div id="side_bar">
+  <h6>
+    <% if logged_in? %>
+      <%= "Logged in as #{current_user.email}" %><br />
+      <%= link_to "logout", logout_path %>
+    <% else %>
+      <%= link_to "login", login_path %>
+    <% end %>
+  </h6>
+  <hr />
+  <p>
+    <ul>
+      <li><%= link_to "home", root_path %></li>
+      <li><%= link_to "categories", tags_path %></li>
+      <% if logged_in? %>
+      <li><%= link_to "articles", articles_path %></li>
+      <li><%= link_to "my account", authors_path(@author) %></li>
+      <% end %>
+    </ul>
+  </p><br /><br />
+  <hr /><br />
+    <ul>
+      <li><%= link_to "Jan", articles_path %></li>
+      <li>Feb</li>
+      <li>March</li>
+      <li>April</li>
+      <li>May</li>
+      <li>June</li>
+      <li>July</li>
+      <li>Aug</li>
+      <li>Sep</li>
+      <li>Oct</li>
+      <li>Nov</li>
+      <li>Dec</li>
+    </ul>
+</div>
